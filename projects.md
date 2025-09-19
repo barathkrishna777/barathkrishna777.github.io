@@ -43,8 +43,3 @@ Here’s a selection of projects showcasing my work in robotics, planning, and c
 [Team Website](https://www.iitbracing.org/)
 
 ---
-
-## Roll Stability Control Tool (Jaguar Land Rover, 2022–2024)
-- Developed a simulation tool reducing run-time from **1.5 hrs → 3 mins**.  
-- Built Simulink-to-Carmaker plugin generator for rapid vehicle testing.  
-- Benchmarked steering, ride, and handling performance across models.

@@ -1,5 +1,5 @@
 ---
-layout: home
+layout: default
 title: "Barath Krishna"
 subtitle: "Robotics Researcher @ CMU"
 ---

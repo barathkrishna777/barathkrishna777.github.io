@@ -1,27 +1,57 @@
+# =====================================================
+# SITE SETTINGS
+# =====================================================
+title: "Barath Krishna"
+description: "Robotics researcher at CMU | Planning, Control, and Perception"
+url: "https://barathkrishna777.github.io"
+baseurl: ""
+
+# =====================================================
+# THEME
+# =====================================================
 remote_theme: alshedivat/al-folio
-name: Barathkrishna Satheeshkumar
-description: "Robotics, Controls, and Motion Planning Researcher"
-avatar: assets/img/profile_picture.jpg
-content_width: 1000px
-
-nav:
-  - title: "Home"
-    url: /
-  - title: "About"
-    url: /about/
-  - title: "Projects"
-    url: /projects/
-  - title: "Experience"
-    url: /experience/
-  - title: "Resume"
-    url: /cv/
-  - title: "Contact"
-    url: /contact/
-
 plugins:
-  - jekyll-remote-theme
-  - jekyll-sitemap
   - jekyll-feed
+  - jekyll-sitemap
   - jekyll-seo-tag
-scholar:
-  no_jekyll_scholar: true
+  - jekyll-remote-theme
+  - jekyll-include-cache
+
+# =====================================================
+# AUTHOR PROFILE
+# =====================================================
+author:
+  name: "Barathkrishna Satheeshkumar"
+  avatar: "/assets/images/profile.jpg"   # add later if you want
+  bio: "Robotics researcher @ CMU, focusing on motion planning, control, and perception."
+  location: "Pittsburgh, PA, USA"
+  email: "barathkrishna1201@gmail.com"
+  github: "barathkrishna777"
+  linkedin: "barathkrishnas"
+
+# =====================================================
+# LAYOUTS & NAVIGATION
+# =====================================================
+collections:
+  pages:
+    output: true
+
+include:
+  - _pages
+
+# Load navigation from external YAML
+defaults:
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: page
+      author_profile: true
+
+# =====================================================
+# MARKDOWN / BUILD
+# =====================================================
+markdown: kramdown
+kramdown:
+  input: GFM
+highlighter: rouge

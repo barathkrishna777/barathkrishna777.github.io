@@ -1,9 +1,0 @@
-# _data/skills.yml
-- name: Programming
-  keywords: [C++, Python, MATLAB, Julia, PyTorch, CUDA, ROS 1/2]
-- name: Simulation & Modeling
-  keywords: [Gazebo, MuJoCo, Isaac Gym, Carmaker, ANSYS, SolidWorks]
-- name: Systems & Safety
-  keywords: [Functional Safety, SOTIF (ISO 21448), ASPICE]
-- name: Control & Planning
-  keywords: [Deep RL, Optimal Control, MPC, L1 Adaptive Control, Control Barrier Functions]

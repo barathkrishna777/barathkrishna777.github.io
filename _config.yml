@@ -16,3 +16,11 @@ nav:
     url: /cv/
   - title: "Contact"
     url: /contact/
+
+plugins:
+  - jekyll-remote-theme
+  - jekyll-sitemap
+  - jekyll-feed
+  - jekyll-seo-tag
+scholar:
+  no_jekyll_scholar: true

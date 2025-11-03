@@ -1,4 +1,4 @@
-theme: jekyll-theme-minimal
-title: "Barath's Homepage"
-description: "Engineering Portfolio – Robotics, Controls, and Planning"
-logo: assets/img/profile_picture.jpg
+remote_theme: alshedivat/al-folio
+name: Barathkrishna Satheeshkumar
+description: "Robotics, Controls, and Motion Planning Researcher"
+avatar: assets/img/profile_picture.jpg

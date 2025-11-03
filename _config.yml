@@ -2,3 +2,17 @@ remote_theme: alshedivat/al-folio
 name: Barathkrishna Satheeshkumar
 description: "Robotics, Controls, and Motion Planning Researcher"
 avatar: assets/img/profile_picture.jpg
+
+nav:
+  - title: "Home"
+    url: /
+  - title: "About"
+    url: /about/
+  - title: "Projects"
+    url: /projects/
+  - title: "Experience"
+    url: /experience/
+  - title: "Resume"
+    url: /resume/
+  - title: "Contact"
+    url: /contact/

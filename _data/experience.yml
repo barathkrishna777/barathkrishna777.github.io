@@ -1,0 +1,33 @@
+# _data/experience.yml
+- company: PlusAI
+  position: Systems Engineering Intern
+  duration: May 2025 – Aug 2025
+  location: Santa Clara, CA
+  description: |
+    Designed and implemented a GUI-based tool to score highway merging scenarios using headway time, achieving 81% classification accuracy and 78% recall.
+    Built a centralized framework for safety metrics aligned with SOTIF (ISO 21448).
+    Expanded simulation set by ~67% with full coverage analysis.
+
+- company: Jaguar Land Rover
+  position: Graduate Vehicle Dynamics Engineer
+  duration: Jul 2022 – Jul 2024
+  location: Bengaluru, India
+  description: |
+    Developed and deployed a Roll Stability Control Simulation Tool, reducing simulation time from 1.5 hrs to 3 mins (97% reduction).
+    Built a Simulink-to-Carmaker plugin generator for rapid virtual vehicle testing.
+
+- company: Bajaj Auto Ltd.
+  position: Summer Research Intern
+  duration: May 2021 – Jul 2021
+  location: Pune, India
+  description: |
+    Extracted and plotted noise contours, orders and slice information using a self-developed approach.  
+    Developed a Python based GUI to import and compare noise data from different vehicle sources.
+
+- company: Raptee Energy
+  position: Vehicle Dynamics Intern
+  duration: Apr 2020 – Jul 2020
+  location: Chennai, India
+  description: |
+    Developed traction control for EV bikes: +25% grip, +15% acceleration.  
+    Optimized suspension, ABS, and hill-climb system using self-developed Simulink model.

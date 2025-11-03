@@ -1,0 +1,41 @@
+# _data/projects.yml
+- name: T-Cap Recycling Robot
+  tagline: Automated e-waste recycling using vision-guided manipulation.
+  repo: barathkrishna777/TCap-Recycling-Robot
+  description: |
+    Built an end-to-end system for **automated tantalum capacitor removal** from PCBs. 
+    Designed a perception pipeline combining **YOLO + OCR** for detection and classification, 
+    integrated with a **UR5 manipulator** and **pneumatic air-chisel** for physical removal. 
+    Demonstrated scalable applications in **sustainable robotics and e-waste recycling**.
+
+- name: RL-Adaptive MPC for Quadrupeds
+  tagline: Integrated L1 adaptive control with reinforcement learning for improved robustness.
+  repo: Nike353/RL-AFQP
+  url: https://github.com/Nike353/RL-AFQP/tree/master
+  description: |
+    Achieved **4× jump distance** under doubled payload mass, outperforming the baseline controller in sim-to-sim transfer tests.
+    Validated on Go1 quadruped in MuJoCo and Isaac Gym.
+
+- name: Hierarchical Motion Planning
+  tagline: Efficient trajectory planning for high-DoF robotic arms in cluttered environments.
+  repo: barathkrishna777/Hierarchical-Planning-for-n-DoF-Arms
+  description: |
+    Reduced planning cost by **53%** and time by **35%**, achieving near-optimal trajectories with 70% fewer samples than RRT*.
+
+- name: MMPUG – Graduate Researcher
+  tagline: High-speed nonlinear control for agile mobile robots.
+  repo: barathkrishna777/Nonlinear-Control-MMPUG
+  description: |
+    Researched **nonlinear control barrier functions** and regularized optimization 
+    for dynamic legged and wheeled robots. 
+    Improved top speeds from **3.5 m/s → 6 m/s** while ensuring safety and stability. 
+    Published work through CMU’s **MattLab** under Prof. Matthew Travers.
+
+- name: Formula Student – IIT Bombay Racing
+  tagline: Electric race car design and systems engineering for Formula Student UK.
+  repo: barathkrishna777/IITB-Racing
+  description: |
+    Led a **110-member multidisciplinary team** to design and build an electric race car. 
+    Engineered a **24% lighter planetary gearbox** while maintaining efficiency, 
+    and optimized dynamics simulations to reduce computation time by **75%**. 
+    Team achieved **8th place at Formula Student UK 2022**.

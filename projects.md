@@ -5,10 +5,10 @@ Here’s a selection of projects showcasing my work in robotics, planning, and c
 ---
 
 ## T-Cap Recycling Robot (CMU Biorobotics Lab, 2025–Present)
-- Developed an end-to-end system for **automated e-waste recycling**.  
-- Vision pipeline using **YOLO + OCR** for capacitor detection.  
-- Integrated UR5 manipulator + pneumatic air-chisel for capacitor removal.  
-- Contribution to sustainable robotics applications.
+- Developed an end-to-end robotic system for automated Tantalum Capacitor removal from PCBs, achieving **<1 s duty cycle**.  
+- Built a real-time vision pipeline with YOLO-OBB, OCR, and PCB corner tracking for **sub-mm localization** of components.  
+- Integrated a UR5e manipulator with a custom air-chisel end-effector and ROS 2 MoveIt motion planning, to extract components.  
+- Designed a scene-flow-based PCB corner and edge tracker resilient to occlusions, enabling continuous closed-loop operation.
 
 ---
 

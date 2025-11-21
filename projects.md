@@ -5,6 +5,8 @@ Here’s a selection of projects showcasing my work in robotics, planning, and c
 ---
 
 ## T-Cap Recycling Robot (CMU Biorobotics Lab, 2025–Present)
+![T-Cap Recycling Robot]({{ "/assets/img/tcap-recycling-robot.png" | relative_url }})
+
 Automated recovery of Tantalum Capacitors from electronic waste using vision-guided manipulation and high-speed motion planning.
 - Developed an automated system to recover Tantalum Capacitors from electronic waste, improving sustainability and reducing hazardous manual labor.
 - Led the design of an end-to-end perception and manipulation pipeline enabling <1 s duty cycle per extracted component.
@@ -15,15 +17,19 @@ Automated recovery of Tantalum Capacitors from electronic waste using vision-gui
 ---
 
 ## Hierarchical Motion Planning (CMU, 2025)
+![Hierarchical Motion Planning]({{ "/assets/img/hierarchical-motion-planning.png" | relative_url }})
+
 Hierarchical planner for high-DoF arms that combines task-space search with sampling-based planning to reduce cost and computation time.
 - Addressed efficient trajectory generation for high-DoF robot arms operating in cluttered environments.
 - Combined Dijkstra-based task-space search with configuration-space sampling to reduce search overhead.
-- Achieved 53% lower planning cost and 35% faster solve times, using 70% fewer samples than RRT* while maintaining near-optimal paths.
+- Achieved 53% lower planning cost and 35% faster solve times, using 70% fewer samples than RRT* while maintaining near-optimal paths.  
 [GitHub Repo](https://github.com/barathkrishna777/Hierarchical-Planning-for-n-DoF-Arms)
 
 ---
 
 ## RL-Adaptive MPC for Quadrupeds (CMU, 2025)
+![RL-Adaptive MPC for Quadrupeds]({{ "/assets/img/rl-adaptive-mpc-quadruped.png" | relative_url }})
+
 Robust locomotion controller for quadrupeds that blends L1 adaptive control with reinforcement learning.
 - Integrated L1 adaptive control with RL to improve robustness under changing payload and terrain.
 - Demonstrated 4× increase in jump distance under doubled payload mass, with improved stability.
@@ -33,6 +39,8 @@ Robust locomotion controller for quadrupeds that blends L1 adaptive control with
 ---
 
 ## MMPUG - Graduate Researcher (CMU, 2024–2025)
+![MMPUG Research]({{ "/assets/img/mmpug-research.png" | relative_url }})
+
 Nonlinear control research for high-speed autonomous robots using control barrier functions and regularization.
 - Researched control strategies for high-speed autonomous ground robots in the MMPUG / MattLab group.
 - Used control barrier functions and regularization to improve safety and stability at higher speeds.
@@ -41,11 +49,13 @@ Nonlinear control research for high-speed autonomous robots using control barrie
 ---
 
 ## Formula Student – IIT Bombay Racing (2019–2022)
+![IIT Bombay Racing – Formula Student EV]({{ "/assets/img/iitb-racing-formula-student.jpg" | relative_url }})
+
 End-to-end EV race car development as part of a 110-member Formula Student team.
 - Led a 110-member student team to design, build, and race an electric formula-style car.
 - Engineered a lightweight planetary gearbox with 24% mass reduction at comparable performance.
 - Revamped vehicle dynamics and simulation pipelines, reducing computation time by 75%.
-- Helped the team place 8th at Formula Student UK 2022.
+- Helped the team place 8th at Formula Student UK 2022.  
 [Team Website](https://www.iitbracing.org/)
 
 ---

@@ -1,5 +1,5 @@
 import Experience from "../components/Experience";
-import Projects from "../components/Projects";
+import FeaturedProjects from "../components/FeaturedProjects"; // Uses the new component
 
 const Career = () => {
   return (
@@ -9,8 +9,13 @@ const Career = () => {
           <h1 className="text-4xl md:text-6xl font-bold mb-4">Career Journey</h1>
           <p className="text-xl text-muted-foreground">My professional experience and technical projects.</p>
         </div>
+        {/* This now uses the new Timeline style */}
         <Experience />
-        <Projects />
+        
+        <div className="mt-16">
+             {/* Uses the new Featured Projects teaser */}
+            <FeaturedProjects />
+        </div>
       </div>
     </div>
   );

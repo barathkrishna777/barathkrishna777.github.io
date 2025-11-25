@@ -73,8 +73,7 @@ const Experience = () => {
       description: [
         "Developed an end-to-end robotic system for automated Tantalum Capacitor removal from PCBs, achieving <1s duty cycle",
         "Built a real-time vision pipeline with YOLO-OBB, OCR, and PCB corner tracking for sub-mm localization",
-        "Integrated UR5e manipulator with custom air-chisel end-effector and ROS 2 MoveIt motion planning",
-        "Designed scene-flow-based PCB corner tracker resilient to occlusions for continuous closed-loop operation"
+        "Integrated UR5e manipulator with custom air-chisel end-effector and ROS 2 MoveIt motion planning"
       ]
     },
     {
@@ -85,8 +84,7 @@ const Experience = () => {
       description: [
         "Designed GUI-based tool to quantitatively score highway merging scenarios, improving AV performance evaluation",
         "Validated scoring tool across 144 simulation scenarios, achieving 81% classification accuracy and 78% recall",
-        "Developed centralized framework for performance metrics management and standardized reporting",
-        "Conducted detailed coverage analysis, expanding simulation set by ~67% with SOTIF (ISO 21448) alignment"
+        "Developed centralized framework for performance metrics management and standardized reporting"
       ]
     },
     {
@@ -106,8 +104,7 @@ const Experience = () => {
       period: "Jul 2022 – Jul 2024",
       description: [
         "Developed Roll Stability Control Simulation Tool, reducing simulation time from 1.5 hrs to 3 mins",
-        "Built Simulink-to-Carmaker plugin generation tool for rapid virtual testing",
-        "Performed comprehensive evaluations to benchmark steering feel, ride comfort, and handling performance"
+        "Built Simulink-to-Carmaker plugin generation tool for rapid virtual testing"
       ]
     },
     {
@@ -116,23 +113,19 @@ const Experience = () => {
       location: "Chennai, India",
       period: "Apr 2020 – Jul 2020",
       description: [
-        "Developed traction control system for electric bikes, enhancing control by 25% and acceleration by 15%",
-        "Optimized suspension parameters, ABS & Hill-Climb systems using transient model in Simulink"
+        "Developed traction control system for electric bikes, enhancing control by 25% and acceleration by 15%"
       ]
     }
   ];
 
   return (
     <section id="experience" className="py-24 relative overflow-hidden">
-      {/* Decorative Background Element */}
-      <div className="absolute top-0 left-0 w-full h-full bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-primary/5 via-transparent to-transparent pointer-events-none" />
-      
       <div className="container px-6 relative z-10">
         <div className="max-w-5xl mx-auto">
           <div className="text-center space-y-4 mb-16">
             <h2 className="text-4xl md:text-5xl font-bold tracking-tight">Professional Journey</h2>
             <p className="text-lg text-muted-foreground">
-              Building autonomous systems and pushing the boundaries of robotics
+              My career path in robotics and autonomous systems
             </p>
           </div>
           

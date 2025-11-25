@@ -133,12 +133,6 @@ const Experience = () => {
     <section id="experience" className="py-24 relative overflow-hidden">
       <div className="container px-6 relative z-10">
         <div className="max-w-5xl mx-auto">
-          <div className="text-center space-y-4 mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold tracking-tight">Professional Journey</h2>
-            <p className="text-lg text-muted-foreground">
-              My career path in robotics and autonomous systems
-            </p>
-          </div>
           
           <div className="relative">
             {experiences.map((exp, index) => (

@@ -40,7 +40,7 @@ const Experience = () => {
   const experiences = [
     {
       company: "Biorobotics Lab, Carnegie Mellon University",
-      role: "Graduate Researcher - T-Cap Recycling Robot",
+      role: "Robotics Engineer - Capacitor Recycling Robot",
       location: "Pittsburgh, PA",
       period: "Aug 2025 – Present",
       description: [
@@ -64,7 +64,7 @@ const Experience = () => {
     },
     {
       company: "MattLab, Carnegie Mellon University",
-      role: "Graduate Researcher - MMPUG",
+      role: "Robotics Software Engineer",
       location: "Pittsburgh, PA",
       period: "Aug 2024 – May 2025",
       description: [

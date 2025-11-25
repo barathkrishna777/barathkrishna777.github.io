@@ -11,10 +11,18 @@ const travelData: Record<string, { name: string; period: string; description: st
     period: "May 2024",
     description: "A journey through modern cities and ancient traditions. From the neon lights of Tokyo to the peaceful temples of Kyoto.",
     images: [
-      "/placeholder.svg", 
-      "/placeholder.svg",
-      "/placeholder.svg",
-      "/placeholder.svg"
+      "/japan_1.jpg", 
+      "/japan_2.jpg",
+      "/japan_3.jpg",
+      "/japan_4.jpg",
+      "/japan_5.jpg", 
+      "/japan_6.jpg",
+      "/japan_7.jpg",
+      "/japan_8.jpg",
+      "/japan_9.jpg", 
+      "/japan_10.jpg",
+      "/japan_11.jpg",
+      "/japan_12.jpg"
     ]
   },
   thailand: {

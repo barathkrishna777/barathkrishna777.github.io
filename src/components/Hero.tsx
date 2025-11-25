@@ -40,9 +40,9 @@ const Hero = () => {
           </h1>
           
           <p className="text-xl md:text-2xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            Incoming Software Integration Engineer @ Applied Intuition.<br />
-            MS in Mechanical Engineering @ Carnegie Mellon University.<br />
-            B.Tech in Mechanical Engineering @ IIT Bombay.
+            Incoming Software Integration Engineer @ Applied Intuition<br />
+            MS in Mechanical Engineering @ Carnegie Mellon University<br />
+            B.Tech in Mechanical Engineering @ IIT Bombay
           </p>
           
           <div className="flex flex-wrap gap-4 justify-center pt-4">

@@ -1,11 +1,11 @@
 import Hero from "@/components/Hero";
 import Education from "@/components/Education";
-import Experience from "@/components/Experience";
-import Skills from "@/components/Skills";
 import Contact from "@/components/Contact";
 import { TravelHighlights } from "@/components/TravelHighlights";
 import FeaturedProjects from "@/components/FeaturedProjects";
 import { Separator } from "@/components/ui/separator";
+import { Card } from "@/components/ui/card";
+import { Briefcase } from "lucide-react";
 
 const Index = () => {
   return (
@@ -15,26 +15,41 @@ const Index = () => {
       
       <div className="relative z-20 bg-background">
         
-        {/* 2. Education: Essential Personal Context */}
+        {/* 2. Current Role: Quick highlight */}
+        <section className="py-12 container px-6">
+           <div className="max-w-4xl mx-auto">
+             <h2 className="text-2xl font-bold mb-6 flex items-center gap-2">
+               <Briefcase className="w-5 h-5 text-primary" />
+               Current Focus
+             </h2>
+             <Card className="p-6 bg-gradient-card border-border/50 hover:shadow-md transition-all">
+                <div className="flex flex-col md:flex-row md:items-center justify-between gap-4">
+                   <div>
+                      <h3 className="text-xl font-bold text-foreground">Incoming Software Integration Engineer</h3>
+                      <p className="text-primary text-lg font-medium">Applied Intuition</p>
+                   </div>
+                   <div className="text-muted-foreground text-sm font-medium bg-secondary/50 px-3 py-1 rounded-full w-fit">
+                      Mountain View, CA
+                   </div>
+                </div>
+             </Card>
+           </div>
+        </section>
+
+        <Separator className="container opacity-30" />
+        
+        {/* 3. Education: Essential Personal Context (Compact Version) */}
         <Education />
         
-        <Separator className="container opacity-30" />
-
-        {/* 3. Experience: The Core Story (Timeline) */}
-        <Experience />
-
-        {/* 4. Skills: Capabilities */}
-        <Skills />
-
-        {/* 5. Featured Projects: Teaser for technical work */}
+        {/* 4. Featured Projects: Teaser for technical work */}
         <div className="bg-muted/20">
           <FeaturedProjects />
         </div>
 
-        {/* 6. Travel: Visual Personality */}
+        {/* 5. Travel: Visual Personality */}
         <TravelHighlights />
 
-        {/* 7. Contact */}
+        {/* 6. Contact */}
         <Contact />
       </div>
       

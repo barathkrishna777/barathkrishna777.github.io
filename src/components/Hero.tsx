@@ -18,6 +18,16 @@ const Hero = () => {
       
       <div className="container relative z-10 px-6 py-32">
         <div className="max-w-4xl mx-auto text-center space-y-8 animate-in fade-in slide-in-from-bottom-4 duration-1000">
+          
+          {/* Profile Picture Section */}
+          <div className="relative w-40 h-40 mx-auto mb-8 rounded-full overflow-hidden border-4 border-background/50 shadow-2xl">
+            <img 
+              src="/assets/hero.jpg"
+              alt="Barathkrishna Satheeshkumar" 
+              className="object-cover w-full h-full"
+            />
+          </div>
+
           <div className="inline-block px-4 py-2 rounded-full bg-secondary/80 backdrop-blur-sm border border-border">
             <span className="text-sm font-medium text-foreground">Engineer • Researcher • Explorer</span>
           </div>

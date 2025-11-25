@@ -1,5 +1,6 @@
 import { Card } from "@/components/ui/card";
-import { MapPin, Calendar } from "lucide-react";
+import { MapPin, Calendar, ArrowRight } from "lucide-react";
+import { Link } from "react-router-dom";
 
 interface TravelDestination {
   country: string;
@@ -9,30 +10,38 @@ interface TravelDestination {
 }
 
 const TravelCard = ({ country, cities, period, flag }: TravelDestination) => (
-  <Card className="p-6 hover:shadow-medium transition-all duration-300 bg-gradient-card border-border/50 group">
-    <div className="space-y-4">
-      <div className="flex items-start justify-between">
-        <div className="flex-1">
-          <div className="flex items-center gap-3 mb-2">
-            <span className="text-4xl">{flag}</span>
-            <h3 className="text-xl font-bold text-foreground">{country}</h3>
+  <Link to={`/travel/${country.toLowerCase()}`}>
+    <Card className="p-6 h-full hover:shadow-medium transition-all duration-300 bg-gradient-card border-border/50 group cursor-pointer relative overflow-hidden">
+      <div className="space-y-4">
+        <div className="flex items-start justify-between">
+          <div className="flex-1">
+            <div className="flex items-center gap-3 mb-2">
+              <span className="text-4xl">{flag}</span>
+              <h3 className="text-xl font-bold text-foreground group-hover:text-primary transition-colors">
+                {country}
+              </h3>
+            </div>
+            <div className="flex items-center gap-2 text-sm text-muted-foreground">
+              <Calendar className="w-4 h-4" />
+              <span>{period}</span>
+            </div>
           </div>
-          <div className="flex items-center gap-2 text-sm text-muted-foreground">
-            <Calendar className="w-4 h-4" />
-            <span>{period}</span>
-          </div>
+          <ArrowRight className="w-5 h-5 text-muted-foreground group-hover:text-primary group-hover:translate-x-1 transition-all" />
+        </div>
+        <div className="flex flex-wrap gap-2">
+          {cities.map((city, index) => (
+            <div key={index} className="flex items-center gap-1 px-3 py-1 rounded-full bg-secondary text-secondary-foreground text-sm">
+              <MapPin className="w-3 h-3" />
+              <span>{city}</span>
+            </div>
+          ))}
+        </div>
+        <div className="pt-4 mt-2 border-t border-border/50">
+            <p className="text-sm text-primary font-medium text-center">View Gallery</p>
         </div>
       </div>
-      <div className="flex flex-wrap gap-2">
-        {cities.map((city, index) => (
-          <div key={index} className="flex items-center gap-1 px-3 py-1 rounded-full bg-secondary text-secondary-foreground text-sm">
-            <MapPin className="w-3 h-3" />
-            <span>{city}</span>
-          </div>
-        ))}
-      </div>
-    </div>
-  </Card>
+    </Card>
+  </Link>
 );
 
 const Travel = () => {
@@ -70,7 +79,7 @@ const Travel = () => {
           <div className="text-center space-y-4">
             <h2 className="text-4xl md:text-5xl font-bold">Travel Adventures</h2>
             <p className="text-lg text-muted-foreground">
-              Exploring the world, one destination at a time
+              Exploring the world, one destination at a time. Click on a card to see the gallery.
             </p>
           </div>
           

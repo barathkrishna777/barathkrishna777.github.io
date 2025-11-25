@@ -108,12 +108,23 @@ const Experience = () => {
       ]
     },
     {
+      company: "Bajaj Auto Ltd.",
+      role: "Summer Intern",
+      location: "Pune, India",
+      period: "May 2021 – Jul 2021",
+      description: [
+        "Developed a Python based GUI to import, compare and manipulate noise data from different vehicle sources",
+        "Implemented critical features like input filtering and plot overlays, reducing man-hours spent on simulations by 20%"
+      ]
+    },
+    {
       company: "Raptee Energy Inc.",
       role: "Vehicle Dynamics Intern",
       location: "Chennai, India",
       period: "Apr 2020 – Jul 2020",
       description: [
-        "Developed traction control system for electric bikes, enhancing control by 25% and acceleration by 15%"
+        "Developed traction control system for electric bikes, enhancing control by 25% and acceleration by 15%",
+        "Optimized suspension parameters, ABS & Hill-Climb systems, leveraging a self-devised transient model constructed on Simulink"
       ]
     }
   ];

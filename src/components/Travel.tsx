@@ -54,7 +54,7 @@ const Travel = () => {
     },
     {
       country: "Thailand",
-      cities: ["Bangkok", "Phuket", "Chiang Mai"],
+      cities: ["Bangkok", "Phuket", "Pattaya"],
       period: "Jan-Feb 2024",
       flag: "🇹🇭"
     },

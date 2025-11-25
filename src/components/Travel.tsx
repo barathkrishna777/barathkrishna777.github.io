@@ -1,4 +1,4 @@
-import { Card } from "@/components/ui/card";
+import { Card } from "./ui/card";
 import { MapPin, Calendar, ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
 
@@ -73,30 +73,19 @@ const Travel = () => {
   ];
 
   return (
-    <section id="travel" className="py-24 bg-muted/30">
-      <div className="container px-6">
-        <div className="max-w-6xl mx-auto space-y-12">
-          <div className="text-center space-y-4">
-            <h2 className="text-4xl md:text-5xl font-bold">Travel Adventures</h2>
-            <p className="text-lg text-muted-foreground">
-              Exploring the world, one destination at a time. Click on a card to see the gallery.
-            </p>
-          </div>
-          
-          <div className="grid md:grid-cols-2 gap-6">
-            {destinations.map((destination, index) => (
-              <TravelCard key={index} {...destination} />
-            ))}
-          </div>
-          
-          <div className="text-center">
-            <p className="text-muted-foreground">
-              Currently based in Pittsburgh, PA • Next destination: Mountain View, CA
-            </p>
-          </div>
-        </div>
+    <div className="space-y-12">
+      <div className="grid md:grid-cols-2 gap-6">
+        {destinations.map((destination, index) => (
+          <TravelCard key={index} {...destination} />
+        ))}
       </div>
-    </section>
+      
+      <div className="text-center">
+        <p className="text-muted-foreground">
+          Currently based in Pittsburgh, PA • Next destination: Mountain View, CA
+        </p>
+      </div>
+    </div>
   );
 };
 

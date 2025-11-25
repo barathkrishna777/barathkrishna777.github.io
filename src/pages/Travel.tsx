@@ -1,7 +1,8 @@
 import { useParams, Link } from "react-router-dom";
-import { Button } from "@/components/ui/button";
+import { Button } from "../components/ui/button";
 import { ArrowLeft } from "lucide-react";
-import { Card } from "@/components/ui/card";
+import { Card } from "../components/ui/card";
+import TravelList from "../components/Travel"; 
 
 // Define your travel data here. Replace placeholder images with your own.
 const travelData: Record<string, { name: string; period: string; description: string; images: string[] }> = {
@@ -47,30 +48,46 @@ const travelData: Record<string, { name: string; period: string; description: st
   }
 };
 
-const Travel = () => {
+const TravelPage = () => {
   const { id } = useParams();
-  // Ensure safe access if id is undefined, though router should prevent that for this route
-  const destination = id ? travelData[id] : null;
+
+  // If no ID is provided, show the main travel list
+  if (!id) {
+    return (
+      <div className="min-h-screen pt-20 animate-in fade-in duration-500">
+        <div className="container px-6 py-12">
+            <div className="max-w-4xl mx-auto text-center mb-4">
+                <h1 className="text-4xl md:text-6xl font-bold mb-4">Travel Adventures</h1>
+                <p className="text-xl text-muted-foreground">Exploring the world, one destination at a time.</p>
+            </div>
+            <TravelList />
+        </div>
+      </div>
+    );
+  }
+
+  // If ID is provided, show the detail view
+  const destination = travelData[id];
 
   if (!destination) {
     return (
-      <div className="min-h-screen flex flex-col items-center justify-center gap-4">
+      <div className="min-h-screen flex flex-col items-center justify-center gap-4 pt-20">
         <h1 className="text-2xl font-bold">Destination not found</h1>
-        <Link to="/">
-          <Button>Return Home</Button>
+        <Link to="/travel">
+          <Button>Back to Travel</Button>
         </Link>
       </div>
     );
   }
 
   return (
-    <div className="min-h-screen bg-background pb-20">
+    <div className="min-h-screen bg-background pb-20 pt-20 animate-in fade-in duration-500">
       {/* Header */}
       <div className="bg-muted/30 py-12 px-6 border-b border-border/50">
         <div className="container max-w-6xl mx-auto">
-          <Link to="/" className="inline-block mb-6">
+          <Link to="/travel" className="inline-block mb-6">
             <Button variant="ghost" className="gap-2 pl-0 hover:bg-transparent hover:text-primary">
-              <ArrowLeft className="w-4 h-4" /> Back to Home
+              <ArrowLeft className="w-4 h-4" /> Back to List
             </Button>
           </Link>
           <h1 className="text-4xl md:text-6xl font-bold mb-4">{destination.name}</h1>
@@ -99,4 +116,4 @@ const Travel = () => {
   );
 };
 
-export default Travel;
+export default TravelPage;

@@ -92,6 +92,16 @@ const Experience = () => {
         "Developed traction control system for electric bikes, enhancing control by 25% and acceleration by 15%",
         "Optimized suspension parameters, ABS & Hill-Climb systems using transient model in Simulink"
       ]
+    },
+    {
+      company: "Bajaj Auto Ltd.",
+      role: "Summer Intern",
+      location: "Pune, India",
+      period: "May 2021 – Jul 2021",
+      description: [
+        "Built a Python based GUI to import, compare and manipulate noise data from different vehicle sources",
+        "Integrated critical features like plot overlays and input filtering, reducing man-hours spent on simulations by 20%"
+      ]
     }
   ];
 

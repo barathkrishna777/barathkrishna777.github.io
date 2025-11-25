@@ -66,6 +66,42 @@ const Projects = () => {
         "Revamped dynamics models, cutting lap-time simulation time by 75%"
       ],
       icon: <Zap className="w-5 h-5 text-primary" />
+    },
+    {
+      title: "Bosch EV Simulation Challenge",
+      period: "Jan 2021 – Apr 2021",
+      description: [
+        "Led a team of 5 to conceptualize the powertrain of an electric two-wheeler to meet a set of performance benchmarks",
+        "Conducted the energy and efficiency calculations for a standard drive cycle with a target range of 85km"
+      ],
+      icon: <Zap className="w-5 h-5 text-primary" />
+    },
+    {
+      title: "Security Surveillance Using Two Agents",
+      period: "Dec 2020 – Feb 2021",
+      description: [
+        "Ideated a novel control algorithm to navigate agents on special annular trajectories eliminating dependency on the initial position",
+        "Implemented the algorithm on unicycle subjects to validate the annular trajectories for surveillance of large areas"
+      ],
+      icon: <Zap className="w-5 h-5 text-primary" />
+    },
+    {
+      title: "Security Surveillance Using Two Agents",
+      period: "Dec 2020 – Feb 2021",
+      description: [
+        "Ideated a novel control algorithm to navigate agents on special annular trajectories eliminating dependency on the initial position",
+        "Implemented the algorithm on unicycle subjects to validate the annular trajectories for surveillance of large areas"
+      ],
+      icon: <Zap className="w-5 h-5 text-primary" />
+    },
+    {
+      title: "Eikonikos – 3D Scanner",
+      period: "May 2019 – Jul 2019",
+      description: [
+        "Fabricated a device for generating 3D models with 1 mm precision, using time-of-flight sensors and 3-D printed ABS components",
+        "Implemented a lead screw mechanism with 1 mm vertical actuation precision, maintaining alignment within 1° for a sensor platform"
+      ],
+      icon: <Zap className="w-5 h-5 text-primary" />
     }
   ];
 

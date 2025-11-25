@@ -24,8 +24,8 @@ const Education = () => {
                   <p className="text-sm text-muted-foreground">Pittsburgh, PA • May 2026 • GPA: 4.00/4.00</p>
                   <div className="pt-2">
                     <p className="text-sm font-medium text-foreground mb-1">Coursework:</p>
-                    <p className="text-sm text-muted-foreground">Deep RL & Control, Optimal Control, Planning for Robotics, Deep Learning</p>
-                    <p className="text-sm text-muted-foreground mt-1">Teaching Assistant: Planning and Decision-Making in Robotics, Mechatronics Design</p>
+                    <p className="text-sm text-muted-foreground">Optimal Control, Planning for Robotics, Deep Learning, Robot Dynamics</p>
+                    <p className="text-sm text-muted-foreground mt-1">Teaching Assistant: Planning for Robotics, Mechatronics Design, Trustworthy AI</p>
                   </div>
                 </div>
               </div>

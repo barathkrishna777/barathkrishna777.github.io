@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Github, Linkedin, Mail } from "lucide-react";
 import heroBg from "@/assets/hero-bg.jpg";
+import heroProfile from "@/assets/hero.jpg"; // Import the image here
 
 const Hero = () => {
   return (
@@ -22,7 +23,7 @@ const Hero = () => {
           {/* Profile Picture Section */}
           <div className="relative w-40 h-40 mx-auto mb-8 rounded-full overflow-hidden border-4 border-background/50 shadow-2xl">
             <img 
-              src="/assets/hero.jpg"
+              src={heroProfile} // Use the imported variable here
               alt="Barathkrishna Satheeshkumar" 
               className="object-cover w-full h-full"
             />

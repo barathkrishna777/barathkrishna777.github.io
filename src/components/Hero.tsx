@@ -35,13 +35,14 @@ const Hero = () => {
           
           <h1 className="text-5xl md:text-7xl font-bold tracking-tight">
             <span className="bg-gradient-to-r from-primary via-primary to-accent bg-clip-text text-transparent">
-              Barathkrishna Satheeshkumar
+              Hi! I'm Barath
             </span>
           </h1>
           
           <p className="text-xl md:text-2xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            MS in Mechanical Engineering @ Carnegie Mellon University, focusing on robotics and autonomous systems.
-            Incoming Software Integration Engineer @ Applied Intuition.
+            Incoming Software Integration Engineer @ Applied Intuition.<br />
+            MS in Mechanical Engineering @ Carnegie Mellon University.<br />
+            B.Tech in Mechanical Engineering @ IIT Bombay.
           </p>
           
           <div className="flex flex-wrap gap-4 justify-center pt-4">

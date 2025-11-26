@@ -21,7 +21,7 @@ const Hero = () => {
         <div className="max-w-4xl mx-auto text-center space-y-8 animate-in fade-in slide-in-from-bottom-4 duration-1000">
           
           {/* Profile Picture Section */}
-          <div className="relative w-40 h-40 mx-auto mb-8 rounded-full overflow-hidden border-4 border-background/50 shadow-2xl">
+          <div className="relative w-80 h-80 mx-auto mb-8 rounded-full overflow-hidden border-4 border-background/50 shadow-2xl">
             <img 
               src={heroProfile} // Use the imported variable here
               alt="Barathkrishna Satheeshkumar" 

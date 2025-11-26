@@ -1,24 +1,26 @@
 import { Button } from "@/components/ui/button";
-import { Github, Linkedin, Mail } from "lucide-react";
+import { Github, Linkedin, Mail, ChevronDown } from "lucide-react";
 import heroBg from "@/assets/hero-bg.jpg";
-import heroProfile from "@/assets/hero_1.jpg"; // Import the image here
+import heroProfile from "@/assets/hero_1.jpg";
 
 const Hero = () => {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+      {/* Background with Overlay */}
       <div 
         className="absolute inset-0 z-0"
         style={{
           backgroundImage: `url(${heroBg})`,
           backgroundSize: 'cover',
           backgroundPosition: 'center',
+          backgroundAttachment: 'fixed', // Parallax effect
         }}
       >
-        <div className="absolute inset-0 bg-gradient-to-br from-background/95 via-background/90 to-background/85" />
+        <div className="absolute inset-0 bg-black/60 backdrop-blur-[2px]" />
       </div>
       
-      <div className="container relative z-10 px-6 py-32">
-        <div className="max-w-4xl mx-auto text-center space-y-8 animate-in fade-in slide-in-from-bottom-4 duration-1000">
+      <div className="container relative z-10 px-6 py-32 flex flex-col items-center">
+        <div className="max-w-4xl mx-auto text-center space-y-8 animate-in fade-in zoom-in-95 duration-1000">
           
           {/* Profile Picture Section */}
           <div className="relative w-80 h-80 mx-auto mb-8 rounded-full overflow-hidden border-4 border-background/50 shadow-2xl">
@@ -32,23 +34,31 @@ const Hero = () => {
           <div className="inline-block px-4 py-2 rounded-full bg-secondary/80 backdrop-blur-sm border border-border">
             <span className="text-sm font-medium text-foreground">Engineer • Researcher • Explorer</span>
           </div>
+
+          {/* Glassmorphism Card for Intro */}
+          <div className="bg-white/5 backdrop-blur-md border border-white/10 p-8 rounded-2xl shadow-2xl animate-in slide-in-from-bottom-8 duration-1000 delay-200">
+            <div className="inline-block px-4 py-1.5 mb-4 rounded-full bg-primary/20 text-primary-foreground border border-primary/20 backdrop-blur-sm">
+              <span className="text-sm font-medium tracking-wide uppercase">Engineer • Researcher • Explorer</span>
+            </div>
+            
+            <h1 className="text-5xl md:text-7xl font-bold tracking-tight text-white mb-6">
+              Hi! I'm <span className="text-primary bg-clip-text text-transparent bg-gradient-to-r from-primary via-cyan-400 to-primary bg-[length:200%_auto] animate-gradient">Barath</span>
+            </h1>
+            
+            <p className="text-lg md:text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed font-light">
+              Building the future of autonomous systems at <span className="font-semibold text-white">Applied Intuition</span>
+              <br className="hidden md:block" />
+              MS in Mechanical Engineering @ <span className="font-semibold text-white">Carnegie Mellon</span>
+              <br className="hidden md:block" />
+              BTech in Mechanical Engineering @ <span className="font-semibold text-white">IIT Bombay</span>.
+            </p>
+          </div>
           
-          <h1 className="text-5xl md:text-7xl font-bold tracking-tight">
-            <span className="bg-gradient-to-r from-primary via-primary to-accent bg-clip-text text-transparent">
-              Hi! I'm Barath
-            </span>
-          </h1>
-          
-          <p className="text-xl md:text-2xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            Incoming Software Integration Engineer @ Applied Intuition<br />
-            MS in Mechanical Engineering @ Carnegie Mellon University<br />
-            B.Tech in Mechanical Engineering @ IIT Bombay
-          </p>
-          
-          <div className="flex flex-wrap gap-4 justify-center pt-4">
+          {/* Action Buttons */}
+          <div className="flex flex-wrap gap-4 justify-center pt-4 animate-in slide-in-from-bottom-8 duration-1000 delay-300">
             <Button 
               size="lg" 
-              className="shadow-medium hover:shadow-strong transition-all"
+              className="bg-primary hover:bg-primary/90 text-white shadow-lg shadow-primary/25 min-w-[160px] h-12 text-base"
               onClick={() => document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' })}
             >
               View Projects
@@ -56,41 +66,39 @@ const Hero = () => {
             <Button 
               size="lg" 
               variant="outline"
-              className="shadow-subtle hover:shadow-medium transition-all"
+              className="bg-transparent border-white/20 text-white hover:bg-white/10 hover:text-white min-w-[160px] h-12 text-base backdrop-blur-sm"
               onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
             >
               Get in Touch
             </Button>
           </div>
           
-          <div className="flex gap-4 justify-center pt-8">
-            <a 
-              href="https://github.com/barathkrishna777" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="p-3 rounded-full bg-card hover:bg-secondary transition-all shadow-subtle hover:shadow-medium"
-            >
-              <Github className="w-5 h-5" />
-            </a>
-            <a 
-              href="https://linkedin.com/in/barathkrishnas" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="p-3 rounded-full bg-card hover:bg-secondary transition-all shadow-subtle hover:shadow-medium"
-            >
-              <Linkedin className="w-5 h-5" />
-            </a>
-            <a 
-              href="mailto:barathkrishna1201@gmail.com"
-              className="p-3 rounded-full bg-card hover:bg-secondary transition-all shadow-subtle hover:shadow-medium"
-            >
-              <Mail className="w-5 h-5" />
-            </a>
+          {/* Social Links */}
+          <div className="flex gap-4 justify-center pt-8 animate-in slide-in-from-bottom-8 duration-1000 delay-500">
+            <SocialLink href="https://github.com/barathkrishna777" icon={<Github className="w-5 h-5" />} />
+            <SocialLink href="https://linkedin.com/in/barathkrishnas" icon={<Linkedin className="w-5 h-5" />} />
+            <SocialLink href="mailto:barathkrishna1201@gmail.com" icon={<Mail className="w-5 h-5" />} />
           </div>
         </div>
+      </div>
+
+      {/* Scroll Indicator */}
+      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce duration-2000 text-white/50">
+        <ChevronDown className="w-8 h-8" />
       </div>
     </section>
   );
 };
+
+const SocialLink = ({ href, icon }: { href: string; icon: React.ReactNode }) => (
+  <a 
+    href={href} 
+    target="_blank" 
+    rel="noopener noreferrer"
+    className="p-3 rounded-full bg-white/5 border border-white/10 text-white hover:bg-white/20 hover:scale-110 transition-all duration-300"
+  >
+    {icon}
+  </a>
+);
 
 export default Hero;

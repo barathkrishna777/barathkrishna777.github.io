@@ -26,7 +26,7 @@ const Navbar = () => {
       <div className="container flex h-16 items-center justify-between px-6">
         <Link to="/" className="flex items-center space-x-2 group">
           <span className="text-xl font-bold tracking-tight text-foreground group-hover:text-primary transition-colors">
-            Barathkrishna S.
+            Barath Krishna
           </span>
         </Link>
 

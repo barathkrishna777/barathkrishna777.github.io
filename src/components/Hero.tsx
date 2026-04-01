@@ -46,7 +46,7 @@ const Hero = () => {
             </h1>
             
             <p className="text-lg md:text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed font-light">
-              Incoming Software Integration Engineer @ <span className="font-semibold text-white">Applied Intuition</span>
+              Incoming Software Integration Engineer @ <span className="font-semibold text-white">Tesla</span>
               <br className="hidden md:block" />
               MS in Mechanical Engineering @ <span className="font-semibold text-white">Carnegie Mellon</span>
               <br className="hidden md:block" />

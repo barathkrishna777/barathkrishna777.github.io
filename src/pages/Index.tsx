@@ -26,7 +26,7 @@ const Index = () => {
                 <div className="flex flex-col md:flex-row md:items-center justify-between gap-4">
                    <div>
                       <h3 className="text-xl font-bold text-foreground">Incoming Software Integration Engineer</h3>
-                      <p className="text-primary text-lg font-medium">Applied Intuition</p>
+                      <p className="text-primary text-lg font-medium">Tesla</p>
                    </div>
                    <div className="text-muted-foreground text-sm font-medium bg-secondary/50 px-3 py-1 rounded-full w-fit">
                       Mountain View, CA

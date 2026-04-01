@@ -53,7 +53,7 @@ const TravelPage = () => {
           <h1 className="text-4xl md:text-6xl font-bold tracking-tight mb-6">Travel Log</h1>
           <p className="text-xl text-muted-foreground">
             Exploring the world, capturing moments, and experiencing new cultures. 
-            Currently based in Pittsburgh, moving to Mountain View.
+            Currently based in Pittsburgh, moving to Palo Alto.
           </p>
         </div>
 

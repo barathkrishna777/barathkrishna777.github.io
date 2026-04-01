@@ -29,7 +29,7 @@ const Index = () => {
                       <p className="text-primary text-lg font-medium">Tesla</p>
                    </div>
                    <div className="text-muted-foreground text-sm font-medium bg-secondary/50 px-3 py-1 rounded-full w-fit">
-                      Mountain View, CA
+                      Palo Alto, CA
                    </div>
                 </div>
              </Card>

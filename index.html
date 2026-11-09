@@ -1,24 +1,159 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Barathkrishna Satheeshkumar | Robotics Engineer</title>
-    <meta name="description" content="MS in Mechanical Engineering at Carnegie Mellon University focusing on robotics and autonomous systems. Software Integration Engineer at Tesla." />
-    <meta name="author" content="Barathkrishna Satheeshkumar" />
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Barathkrishna Satheeshkumar | Robotics &amp; Autonomy Engineer</title>
+<meta name="description" content="Robotics and autonomy engineer. Software Integration Engineer, Vehicle Firmware at Tesla. Previously robot learning, perception and control research at Carnegie Mellon.">
+<meta name="author" content="Barathkrishna Satheeshkumar">
+<meta property="og:title" content="Barathkrishna Satheeshkumar | Robotics &amp; Autonomy Engineer">
+<meta property="og:description" content="Perception, learning and control for machines that move.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://barathkrishna.com">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<link rel="canonical" href="https://barathkrishna.com">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<script src="content.js"></script>
+<style>
+html{scroll-behavior:smooth}
+body{margin:0;background:oklch(0.11 0.004 60);color:oklch(0.96 0.006 80);font-family:Geist,system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+a{color:oklch(0.96 0.006 80);text-decoration:none}a:hover{color:oklch(0.76 0.15 52)}
+*{box-sizing:border-box}
+::selection{background:oklch(0.76 0.15 52);color:oklch(0.11 0.004 60)}
+@keyframes blink{50%{opacity:0}}
+</style>
+</helmet>
+<header style="position:fixed;top:0;left:0;right:0;z-index:20;padding:20px clamp(20px,3.5vw,48px);display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap;mix-blend-mode:difference">
+  <a href="#top" style="font-family:'JetBrains Mono',monospace;font-size:13px;color:#fff;display:flex;align-items:center;gap:10px"><span style="width:8px;height:8px;border-radius:50%;background:#fff"></span>barath.krishna</a>
+  <nav style="display:flex;gap:28px;font-family:'JetBrains Mono',monospace;font-size:12px;text-transform:uppercase;letter-spacing:.06em;flex-wrap:wrap">
+    <a href="#work" style="color:#fff">Work</a><a href="#experience" style="color:#fff">Experience</a><a href="#contact" style="color:#fff">Contact</a><a href="{{ resume }}" download="" style="color:#fff">Résumé ↓</a>
+  </nav>
+</header>
 
-    <meta property="og:title" content="Barathkrishna Satheeshkumar | Robotics Engineer" />
-    <meta property="og:description" content="Carnegie Mellon researcher specializing in robotics, autonomous systems, and vehicle dynamics" />
-    <meta property="og:type" content="website" />
-    <meta property="og:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
+<section id="top" data-screen-label="Hero" style="position:relative;min-height:100vh;display:flex;flex-direction:column;justify-content:flex-end;padding:120px clamp(20px,3.5vw,48px) clamp(32px,5vw,64px);overflow:hidden">
+  <video src="media/pcb_demo.mp4" autoplay="" muted="" loop="" playsinline="" preload="auto" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;filter:saturate(.8) brightness(.85)"></video>
+  <div style="position:absolute;inset:0;background:linear-gradient(to top,oklch(0.11 0.004 60) 8%,oklch(0.11 0.004 60 / .2) 70%,oklch(0.11 0.004 60 / .6))"></div>
+  <div style="position:relative;display:flex;flex-direction:column;gap:32px">
+    <span style="font-family:'JetBrains Mono',monospace;font-size:14px;color:oklch(0.76 0.15 52)">&gt; robotics &amp; autonomy engineer<span style="animation:blink 1s steps(1) infinite">_</span></span>
+    <h1 style="margin:0;font-weight:800;font-size:clamp(44px,9.4vw,164px);line-height:.92;letter-spacing:-0.05em;text-wrap:balance">{{ heroTitle }}</h1>
+    <div style="display:flex;justify-content:space-between;align-items:flex-end;gap:24px;flex-wrap:wrap;padding-top:28px;border-top:1px solid oklch(1 0 0 / .2)">
+      <p style="margin:0;max-width:560px;font-size:clamp(17px,1.5vw,20px);line-height:1.5;font-weight:300;color:oklch(0.86 0.006 80);text-wrap:pretty">Barathkrishna Satheeshkumar. Safety-critical vehicle firmware at Tesla. Before that, robot learning, perception and control at Carnegie Mellon.</p>
+      <a href="#work" style="font-family:'JetBrains Mono',monospace;font-size:13px;text-transform:uppercase;letter-spacing:.06em;display:flex;align-items:center;gap:10px">Scroll the work ↓</a>
+    </div>
+  </div>
+</section>
 
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Barathkrishna Satheeshkumar" />
-    <meta name="twitter:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
-  </head>
+<section id="work" data-screen-label="Work">
+  <sc-for list="{{ work }}" as="w" hint-placeholder-count="0">
+    <article style="position:relative;min-height:92vh;display:flex;flex-direction:column;justify-content:flex-end;padding:clamp(32px,5vw,64px) clamp(20px,3.5vw,48px);overflow:hidden;border-top:1px solid oklch(1 0 0 / .1)">
+      <sc-if value="{{ w.hasVideo }}" hint-placeholder-val="{{ false }}"><video src="{{ w.video }}" muted="" loop="" playsinline="" preload="none" data-lazy="1" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;filter:saturate(.85)"></video></sc-if>
+      <sc-if value="{{ w.hasMedia }}" hint-placeholder-val="{{ false }}"><div role="img" aria-label="{{ w.title }}" style="position:absolute;inset:0;width:100%;height:100%;filter:saturate(.85);background-image:url({{ w.media }});background-size:cover;background-position:center"></div></sc-if>
+      <sc-if value="{{ w.noMedia }}" hint-placeholder-val="{{ true }}">
+        <div style="position:absolute;inset:0;background:repeating-linear-gradient(135deg,oklch(0.14 0.004 60) 0 12px,oklch(0.165 0.004 60) 12px 24px)"></div>
+        <span style="position:absolute;top:32px;left:clamp(20px,3.5vw,48px);font-family:'JetBrains Mono',monospace;font-size:12px;color:oklch(0.6 0.008 70)">[ {{ w.ph }} ]</span>
+      </sc-if>
+      <div style="position:absolute;inset:0;background:linear-gradient(to top,oklch(0.11 0.004 60 / .96) 18%,oklch(0.11 0.004 60 / .35) 65%,oklch(0.11 0.004 60 / .15))"></div>
+      <div style="position:relative;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,420px),1fr));gap:32px 64px;align-items:end">
+        <div style="display:flex;flex-direction:column;gap:18px">
+          <span style="font-family:'JetBrains Mono',monospace;font-size:12px;text-transform:uppercase;letter-spacing:.08em;color:oklch(0.76 0.15 52)">{{ w.n }} — {{ w.org }} — {{ w.year }}</span>
+          <h3 style="margin:0;font-weight:700;font-size:clamp(34px,4.8vw,76px);line-height:.98;letter-spacing:-0.045em;text-wrap:balance">{{ w.title }}</h3>
+          <p style="margin:0;max-width:580px;font-size:17px;line-height:1.55;font-weight:300;color:oklch(0.88 0.006 80);text-wrap:pretty">{{ w.desc }}</p>
+          <div style="display:flex;flex-wrap:wrap;gap:8px 18px;font-family:'JetBrains Mono',monospace;font-size:12px;color:oklch(0.74 0.008 70)">
+            <sc-for list="{{ w.tags }}" as="t"><span>{{ t }}</span></sc-for>
+          </div>
+        </div>
+        <div style="display:flex;flex-direction:column;align-items:flex-start;gap:20px;justify-self:end;text-align:left">
+          <span style="font-weight:800;font-size:clamp(80px,13vw,220px);line-height:.85;letter-spacing:-0.06em;color:oklch(0.76 0.15 52)">{{ w.stat }}</span>
+          <span style="font-family:'JetBrains Mono',monospace;font-size:12px;text-transform:uppercase;letter-spacing:.06em;color:oklch(0.82 0.006 80);max-width:300px">{{ w.statLabel }}</span>
+        </div>
+      </div>
+    </article>
+  </sc-for>
+</section>
 
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
+<section id="experience" data-screen-label="Experience" style="padding:clamp(80px,10vw,140px) clamp(20px,3.5vw,48px) 64px;border-top:1px solid oklch(1 0 0 / .1)">
+  <span style="font-family:'JetBrains Mono',monospace;font-size:12px;text-transform:uppercase;letter-spacing:.08em;color:oklch(0.76 0.15 52)">Experience</span>
+  <div style="margin-top:32px">
+    <sc-for list="{{ exp }}" as="e" hint-placeholder-count="5">
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,380px),1fr));gap:16px 56px;padding:36px 0;border-bottom:1px solid oklch(1 0 0 / .12)">
+        <div style="display:flex;flex-direction:column;gap:10px">
+          <h3 style="margin:0;font-weight:700;font-size:clamp(34px,4.6vw,72px);line-height:.95;letter-spacing:-0.045em">{{ e.co }}</h3>
+          <span style="font-family:'JetBrains Mono',monospace;font-size:12px;text-transform:uppercase;letter-spacing:.06em;color:oklch(0.7 0.008 70)">{{ e.when }} · {{ e.loc }}</span>
+        </div>
+        <div style="display:flex;flex-direction:column;gap:10px;padding-top:6px">
+          <p style="margin:0;font-size:18px;font-weight:600">{{ e.role }}</p>
+          <sc-for list="{{ e.pts }}" as="p"><p style="margin:0;font-size:16px;line-height:1.55;font-weight:300;color:oklch(0.84 0.006 80);text-wrap:pretty">{{ p }}</p></sc-for>
+        </div>
+      </div>
+    </sc-for>
+    <sc-if value="{{ showEarlier }}" hint-placeholder-val="{{ true }}">
+      <div style="display:flex;gap:8px 32px;flex-wrap:wrap;padding-top:24px;font-family:'JetBrains Mono',monospace;font-size:12px;text-transform:uppercase;letter-spacing:.06em;color:oklch(0.66 0.008 70)">
+        <span>Earlier</span><sc-for list="{{ earlier }}" as="r"><span>{{ r.co }} · {{ r.when }}</span></sc-for>
+      </div>
+    </sc-if>
+  </div>
+</section>
+
+<section data-screen-label="Education & Skills" style="padding:64px clamp(20px,3.5vw,48px) clamp(80px,10vw,140px);display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:48px">
+  <div style="display:flex;flex-direction:column;gap:24px">
+    <span style="font-family:'JetBrains Mono',monospace;font-size:12px;text-transform:uppercase;letter-spacing:.08em;color:oklch(0.76 0.15 52)">Education</span>
+    <sc-for list="{{ edu }}" as="d" hint-placeholder-count="2">
+      <div style="display:flex;flex-direction:column;gap:4px">
+        <span style="font-weight:600;font-size:24px;letter-spacing:-0.03em">{{ d.school }}</span>
+        <span style="font-size:15px;font-weight:300;color:oklch(0.84 0.006 80)">{{ d.deg }} · {{ d.when }}</span>
+      </div>
+    </sc-for>
+  </div>
+  <sc-for list="{{ skills }}" as="s" hint-placeholder-count="3">
+    <div style="display:flex;flex-direction:column;gap:24px">
+      <span style="font-family:'JetBrains Mono',monospace;font-size:12px;text-transform:uppercase;letter-spacing:.08em;color:oklch(0.76 0.15 52)">{{ s.k }}</span>
+      <span style="font-size:18px;line-height:1.6;font-weight:300;color:oklch(0.88 0.006 80)">{{ s.joined }}</span>
+    </div>
+  </sc-for>
+</section>
+
+<section id="contact" data-screen-label="Contact" style="background:oklch(0.76 0.15 52);color:oklch(0.13 0.004 60);padding:clamp(80px,10vw,140px) clamp(20px,3.5vw,48px) 40px;display:flex;flex-direction:column;gap:48px">
+  <span style="font-family:'JetBrains Mono',monospace;font-size:12px;text-transform:uppercase;letter-spacing:.08em">Recruiting, building, or just curious</span>
+  <a href="mailto:barathkrishna1201@gmail.com" style="color:oklch(0.13 0.004 60);font-weight:800;font-size:clamp(48px,11vw,190px);line-height:.88;letter-spacing:-0.06em">Let's<br>talk →</a>
+  <div style="display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;padding-top:28px;border-top:1px solid oklch(0.13 0.004 60 / .3);font-family:'JetBrains Mono',monospace;font-size:12px;text-transform:uppercase;letter-spacing:.06em">
+    <div style="display:flex;gap:24px;flex-wrap:wrap"><a href="mailto:barathkrishna1201@gmail.com" style="color:oklch(0.13 0.004 60)">barathkrishna1201@gmail.com</a><a href="https://linkedin.com/in/barathkrishnas" style="color:oklch(0.13 0.004 60)">LinkedIn</a><a href="https://github.com/barathkrishna777" style="color:oklch(0.13 0.004 60)">GitHub</a><a href="{{ resume }}" download="" style="color:oklch(0.13 0.004 60)">Résumé</a></div>
+    <span>© 2026 Barathkrishna Satheeshkumar</span>
+  </div>
+</section>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;hero&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;options&quot;:[&quot;Move&quot;,&quot;Name&quot;,&quot;Safety&quot;],&quot;default&quot;:&quot;Move&quot;,&quot;tsType&quot;:&quot;string&quot;},&quot;showEarlier&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;}}">
+class Component extends DCLogic {
+  componentDidUpdate() { this.kick(); }
+  kick() {
+    document.querySelectorAll('video').forEach(v => {
+      v.muted = true;
+      if (v.dataset.lazy) {
+        if (!v._io) { v._io = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { if (v.readyState === 0) v.load(); v.play().catch(() => {}); } else v.pause(); }), { rootMargin: '200px' }); v._io.observe(v); }
+      } else if (v.paused) v.play().catch(() => {});
+    });
+  }
+  retry() { document.querySelectorAll('video:not([data-lazy])').forEach(v => { if (v.readyState === 0) { v.load(); v.play().catch(() => {}); } }); }
+  componentDidMount() { this.kick(); setTimeout(() => this.kick(), 600); setTimeout(() => this.retry(), 1500); setTimeout(() => this.retry(), 4000); if (!window.BK) { const t = setInterval(() => { if (window.BK) { clearInterval(t); this.forceUpdate(); } }, 50); } }
+  renderVals() {
+    const d = window.BK || { work: [], exp: [], earlier: [], edu: [], skills: [] };
+    const heroes = { "Move": "Machines that see, decide and move.", "Name": "Barathkrishna Satheeshkumar", "Safety": "Autonomy you can trust." };
+    return {
+      heroTitle: heroes[this.props.hero ?? "Move"] || heroes.Move,
+      resume: d.resume,
+      work: d.work.map(w => ({ ...w, hasVideo: !!w.video, hasMedia: !w.video && !!w.media, noMedia: !w.media && !w.video })),
+      exp: d.exp, earlier: d.earlier, edu: d.edu,
+      skills: d.skills.map(s => ({ ...s, joined: s.v.join(" · ") })),
+      showEarlier: this.props.showEarlier ?? true
+    };
+  }
+}
+</script>
+</body>
 </html>

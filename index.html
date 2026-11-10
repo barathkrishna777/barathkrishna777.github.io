@@ -22,10 +22,11 @@ a{color:oklch(0.96 0.006 80);text-decoration:none}a:hover{color:oklch(0.76 0.15 
 *{box-sizing:border-box}
 ::selection{background:oklch(0.76 0.15 52);color:oklch(0.11 0.004 60)}
 @keyframes blink{50%{opacity:0}}
-@keyframes hero-drift{from{transform:scale(1.04) translate3d(0,0,0)}to{transform:scale(1.12) translate3d(-1.2%,-.8%,0)}}
-.hero-portrait{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 38%;animation:hero-drift 32s ease-in-out infinite alternate;will-change:transform}
-@media(max-width:640px){.hero-portrait{object-position:70% center}}
-@media(prefers-reduced-motion:reduce){.hero-portrait{animation:none;transform:scale(1.04)}}
+@keyframes avatar-float{0%,100%{transform:translateY(0) rotate(-1deg)}50%{transform:translateY(-14px) rotate(1deg)}}
+.hero-avatar{position:absolute;z-index:1;right:clamp(18px,7vw,104px);bottom:2%;width:clamp(190px,27vw,390px);height:auto;filter:drop-shadow(0 20px 30px oklch(0 0 0 / .35));transform-origin:50% 85%;animation:avatar-float 4.8s ease-in-out infinite;pointer-events:none}
+.hero-copy{position:relative;z-index:2;display:flex;flex-direction:column;gap:32px;max-width:min(100%,1120px)}
+@media(max-width:640px){.hero-avatar{width:clamp(150px,42vw,220px);right:-8px;bottom:18%;opacity:.82}.hero-copy{gap:24px}}
+@media(prefers-reduced-motion:reduce){.hero-avatar{animation:none}}
 </style>
 </head>
 <body>
@@ -36,9 +37,10 @@ a{color:oklch(0.96 0.006 80);text-decoration:none}a:hover{color:oklch(0.76 0.15 
   </nav>
 </header>
 <section id="top" style="position:relative;min-height:100vh;display:flex;flex-direction:column;justify-content:flex-end;padding:120px clamp(20px,3.5vw,48px) clamp(32px,5vw,64px);overflow:hidden">
-  <img class="hero-portrait" src="media/hero-portrait.webp" alt="" fetchpriority="high" decoding="async">
-  <div style="position:absolute;inset:0;background:linear-gradient(to top,oklch(0.11 0.004 60) 8%,oklch(0.11 0.004 60 / .28) 65%,oklch(0.11 0.004 60 / .45)),linear-gradient(90deg,oklch(0.11 0.004 60 / .42),transparent 75%)"></div>
-  <div style="position:relative;display:flex;flex-direction:column;gap:32px">
+  <video class="hero-video" src="media/hero-video.mp4" autoplay muted loop playsinline preload="metadata" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;filter:saturate(.8) brightness(.72)"></video>
+  <div style="position:absolute;inset:0;background:linear-gradient(to top,oklch(0.11 0.004 60) 8%,oklch(0.11 0.004 60 / .2) 70%,oklch(0.11 0.004 60 / .6))"></div>
+  <img class="hero-avatar" src="media/hero-avatar.webp" alt="Animated 3D avatar of Barath Krishna" fetchpriority="high" decoding="async">
+  <div class="hero-copy">
     <span style="font-family:'JetBrains Mono',monospace;font-size:14px;color:oklch(0.76 0.15 52)">&gt; robotics &amp; autonomy engineer<span style="animation:blink 1s steps(1) infinite">_</span></span>
     <h1 style="margin:0;font-weight:800;font-size:clamp(44px,9.4vw,164px);line-height:.92;letter-spacing:-0.05em;text-wrap:balance">Machines that see, decide and move.</h1>
     <div style="display:flex;justify-content:space-between;align-items:flex-end;gap:24px;flex-wrap:wrap;padding-top:28px;border-top:1px solid oklch(1 0 0 / .2)">
@@ -205,6 +207,7 @@ a{color:oklch(0.96 0.006 80);text-decoration:none}a:hover{color:oklch(0.76 0.15 
 <script>
 document.querySelectorAll('video').forEach(function(v){
   v.muted = true;
+  if (v.classList.contains('hero-video') && window.matchMedia('(prefers-reduced-motion: reduce)').matches) { v.pause(); return; }
   if (v.dataset.lazy) {
     new IntersectionObserver(function(es){ es.forEach(function(e){ if (e.isIntersecting) { v.play().catch(function(){}); } else v.pause(); }); }, { rootMargin: '200px' }).observe(v);
   } else { v.play().catch(function(){}); }
